@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-
-const WA_NUMBER = '529613037073' 
+import { makeWhatsAppUrl } from '../lib/whatsapp'
 
 export default function ProductCard({ product, index, onView }){
   const [selected, setSelected] = useState(0)
@@ -9,7 +8,7 @@ export default function ProductCard({ product, index, onView }){
 
   function orderByWhatsApp(){
     const text = `Hola! Me interesa el ${product.name} - Precio: $${price}`
-    const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`
+    const url = makeWhatsAppUrl(text)
     window.open(url, '_blank')
   }
 

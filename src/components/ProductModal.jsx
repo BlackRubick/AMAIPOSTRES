@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { makeWhatsAppUrl } from '../lib/whatsapp'
 
 export default function ProductModal({ product, open, onClose }){
   const [index, setIndex] = useState(0)
@@ -82,7 +83,8 @@ export default function ProductModal({ product, open, onClose }){
               <div className="mt-auto">
                 <button onClick={()=>{
                   const text = `Hola! Me interesa el ${product.name}`
-                  window.open(`https://wa.me/519613037073?text=${encodeURIComponent(text)}`,'_blank')
+                  const url = makeWhatsAppUrl(text)
+                  window.open(url, '_blank')
                 }} className="w-full bg-[var(--rojo-pasion)] hover:bg-[var(--rosa-fresa)] text-white py-3 rounded-full">Ordenar por WhatsApp</button>
               </div>
 

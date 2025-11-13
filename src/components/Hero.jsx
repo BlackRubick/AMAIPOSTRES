@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { makeWhatsAppUrl } from '../lib/whatsapp'
 
 export default function Hero(){
   return (
@@ -25,7 +26,7 @@ export default function Hero(){
           <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5 }} className="flex gap-4 mt-4">
             <a href="#productos" className="inline-flex items-center gap-2 bg-[var(--rojo-pasion)] hover:bg-[var(--rosa-fresa)] text-white px-6 py-3 rounded-full shadow-lg transform active:scale-95 transition">Ver Catálogo</a>
 
-            <a href={`https://wa.me/529613037073?text=${encodeURIComponent('Hola! Me interesa hacer un pedido de Amai Postres')}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border-2 border-[var(--rojo-pasion)] text-[var(--rojo-pasion)] bg-[var(--white-pure)] px-6 py-3 rounded-full shadow-sm hover:shadow-md transition">Ordenar por WhatsApp</a>
+            <a href={makeWhatsAppUrl('Hola! Me interesa hacer un pedido de Amai Postres')} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 border-2 border-[var(--rojo-pasion)] text-[var(--rojo-pasion)] bg-[var(--white-pure)] px-6 py-3 rounded-full shadow-sm hover:shadow-md transition">Ordenar por WhatsApp</a>
           </motion.div>
         </div>
       </motion.div>

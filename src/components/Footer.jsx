@@ -1,5 +1,6 @@
 import React from 'react'
 import { Phone, Instagram, Facebook } from 'lucide-react'
+import { makeWhatsAppUrl } from '../lib/whatsapp'
 
 export default function Footer(){
   return (
@@ -28,7 +29,7 @@ export default function Footer(){
           <div className="flex gap-3 mt-3">
             <a href="#" className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition"><Instagram size={18} color="white"/></a>
             <a href="#" className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition"><Facebook size={18} color="white"/></a>
-            <a href={`https://wa.me/529613037073`} className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition">WhatsApp</a>
+            <a href={makeWhatsAppUrl('Hola! Quiero contactar')} className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition">WhatsApp</a>
           </div>
         </div>
       </div>

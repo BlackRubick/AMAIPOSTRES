@@ -1,8 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { makeWhatsAppUrl } from '../lib/whatsapp'
 
 export default function CTA(){
-  const wa = `https://wa.me/529613037073?text=${encodeURIComponent('Hola! Quiero ordenar un postre personalizado')}`
+  const wa = makeWhatsAppUrl('Hola! Quiero ordenar un postre personalizado')
   return (
     <section id="cta" className="px-6 py-12" style={{background: 'linear-gradient(90deg, var(--rojo-pasion) 0%, var(--rojo-vino) 100%)'}}>
       <div className="max-w-5xl mx-auto text-center text-white">
