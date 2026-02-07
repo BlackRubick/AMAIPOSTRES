@@ -19,16 +19,16 @@ export default function Footer(){
 
         <div>
           <h5 className="font-semibold">Horarios</h5>
-          <p className="mt-2">Lun - Vie: 9am - 7pm</p>
-          <p>Sábados: 10am - 6pm</p>
-          <p>Domingos: Cerrado</p>
+          <p className="mt-2">Domingo: Cerrado</p>
+          <p>Lun - Vie: 10:00 a.m. - 7:00 p.m.</p>
+          <p>Sábado: 10:00 a.m. - 6:30 p.m.</p>
         </div>
 
         <div>
           <h5 className="font-semibold">Síguenos</h5>
           <div className="flex gap-3 mt-3">
-            <a href="#" className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition"><Instagram size={18} color="white"/></a>
-            <a href="#" className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition"><Facebook size={18} color="white"/></a>
+            <a href="https://www.instagram.com/amai_postres_?igsh=MTNtaGo1eW0xMDNhNg%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition"><Instagram size={18} color="white"/></a>
+            <a href="https://www.facebook.com/share/1C44rhk6hJ/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition"><Facebook size={18} color="white"/></a>
             <a href={makeWhatsAppUrl('Hola! Quiero contactar')} className="p-2 rounded bg-white/10 hover:bg-[var(--rosa-chicle)] transition">WhatsApp</a>
           </div>
         </div>

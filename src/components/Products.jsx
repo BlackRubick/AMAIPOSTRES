@@ -9,9 +9,12 @@ export default function Products(){
   const [selectedProduct, setSelectedProduct] = useState(null)
   const sections = [
     { id: 'tartas', title: 'Tartas' },
-    { id: 'roles', title: 'Roles de Canela' },
-    { id: 'brownies', title: 'Brownies' },
+    { id: 'roles-clasicos', title: 'Roles Clásicos' },
+    { id: 'roles-gourmet', title: 'Roles Gourmet' },
+    { id: 'brownies-sencillos', title: 'Brownies Sencillos' },
+    { id: 'brownies-gourmet', title: 'Brownies Gourmet' },
     { id: 'pays', title: 'Pays de Queso' },
+    { id: 'roscas', title: 'Roscas (Bajo pedido)' },
     { id: 'otros', title: 'Otros' }
   ]
 
