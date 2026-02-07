@@ -9,7 +9,7 @@ const ENV_PHONE = (typeof import.meta !== 'undefined' && import.meta.env && impo
   ? String(import.meta.env.VITE_WHATSAPP_NUMBER)
   : null
 
-export const DEFAULT_WHATSAPP = ENV_PHONE || '529612749056' // update if needed (only digits, incl. country code)
+export const DEFAULT_WHATSAPP = ENV_PHONE || '529613037370' // update if needed (only digits, incl. country code)
 
 export function sanitizePhone(raw){
   if(!raw) return ''
