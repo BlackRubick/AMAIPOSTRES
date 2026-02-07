@@ -6,6 +6,7 @@ import { makeWhatsAppUrl } from '../lib/whatsapp'
 export default function ProductModal({ product, open, onClose }){
   const [index, setIndex] = useState(0)
   const images = product?.images && product.images.length ? product.images : [product.image]
+  const isRosca = product?.category === 'roscas'
 
   useEffect(()=>{
     if(open) setIndex(0)
@@ -81,11 +82,18 @@ export default function ProductModal({ product, open, onClose }){
               )}
 
               <div className="mt-auto">
-                <button onClick={()=>{
-                  const text = `Hola! Me interesa el ${product.name}`
-                  const url = makeWhatsAppUrl(text)
-                  window.open(url, '_blank')
-                }} className="w-full bg-[var(--rojo-pasion)] hover:bg-[var(--rosa-fresa)] text-white py-3 rounded-full">Ordenar por WhatsApp</button>
+                <button
+                  onClick={()=>{
+                    if(isRosca) return
+                    const text = `Hola! Me interesa el ${product.name}`
+                    const url = makeWhatsAppUrl(text)
+                    window.open(url, '_blank')
+                  }}
+                  disabled={isRosca}
+                  className={`w-full py-3 rounded-full transition ${isRosca ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'bg-[var(--rojo-pasion)] hover:bg-[var(--rosa-fresa)] text-white'}`}
+                >
+                  {isRosca ? 'No disponible' : 'Ordenar por WhatsApp'}
+                </button>
               </div>
 
               {images.length > 1 && (

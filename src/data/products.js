@@ -34,18 +34,7 @@ const products = [
     flavors: ['Queso crema'],
     flavorPriceDelta: {}
   },
-  {
-    id: 'p4',
-    name: 'Tarta de Fresas',
-    description: 'Tarta fresca con fresas naturales y crema deliciosa.',
-    images: ['/tartafresas.jpeg'],
-    image: '/tartafresas.jpeg',
-    category: 'tartas',
-    basePrice: 145,
-    flavors: ['Fresa'],
-    flavorPriceDelta: {},
-    badge: 'Recomendado'
-  },
+
   {
     id: 'p5',
     name: 'Caja de 6 Roles Clásicos',
@@ -220,7 +209,7 @@ const products = [
     id: 'p10',
     name: 'Pay de Queso',
     description: 'Clásico pay de queso cremoso con base crujiente.',
-    image: '/payqueso1.jpeg',
+    image: '/payqueso2.jpeg',
     category: 'pays',
     basePrice: 220,
     flavors: ['Natural'],
@@ -258,17 +247,7 @@ const products = [
     flavorPriceDelta: {}
   },
 
-  {
-    id: 'p14',
-    name: 'Tarta de Berries',
-    description: 'Tarta fresca con mezcla de berries y crema.',
-    image: '/tartaberries.jpeg',
-    category: 'tartas',
-    basePrice: 165,
-    flavors: ['Berries'],
-    flavorPriceDelta: {},
-    badge: 'Recomendado'
-  },
+
   {
     id: 'p30',
     name: 'Rosca de Reyes Envinada (Chica 24 cm)',

@@ -5,8 +5,10 @@ import { makeWhatsAppUrl } from '../lib/whatsapp'
 export default function ProductCard({ product, index, onView }){
   const [selected, setSelected] = useState(0)
   const price = (product.basePrice || 0).toFixed(2)
+  const isRosca = product?.category === 'roscas'
 
   function orderByWhatsApp(){
+    if(isRosca) return
     const text = `Hola! Me interesa el ${product.name} - Precio: $${price}`
     const url = makeWhatsAppUrl(text)
     window.open(url, '_blank')
@@ -51,7 +53,13 @@ export default function ProductCard({ product, index, onView }){
           </div>
 
           <div className="w-40 flex flex-col gap-2">
-            <button onClick={(e)=>{ e.stopPropagation(); orderByWhatsApp() }} className="w-full bg-[var(--rojo-pasion)] hover:bg-[var(--rosa-fresa)] text-white py-3 rounded-lg shadow transform hover:scale-105 transition">Ordenar por WhatsApp</button>
+            <button
+              onClick={(e)=>{ e.stopPropagation(); orderByWhatsApp() }}
+              disabled={isRosca}
+              className={`w-full py-3 rounded-lg shadow transition ${isRosca ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'bg-[var(--rojo-pasion)] hover:bg-[var(--rosa-fresa)] text-white transform hover:scale-105'}`}
+            >
+              {isRosca ? 'No disponible' : 'Ordenar por WhatsApp'}
+            </button>
             <button onClick={(e)=>{ e.stopPropagation(); onView && onView(product) }} className="w-full border border-[var(--rojo-pasion)] text-[var(--rojo-pasion)] py-2 rounded-lg">Ver más</button>
           </div>
         </div>
