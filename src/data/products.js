@@ -110,36 +110,6 @@ const products = [
     flavorPriceDelta: {}
   },
   {
-    id: 'p21',
-    name: 'Caja de 4 Brownies Sencillos (Chocolate Blanco)',
-    description: 'Brownies de chocolate blanco con glaseado de nutella.',
-    image: '/cajabrownies4.jpeg',
-    category: 'brownies-sencillos',
-    basePrice: 110,
-    flavors: ['Chocolate blanco'],
-    flavorPriceDelta: {}
-  },
-  {
-    id: 'p22',
-    name: 'Caja de 6 Brownies Sencillos (Chocolate Blanco)',
-    description: 'Brownies de chocolate blanco con glaseado de nutella.',
-    image: '/caja6brownies.jpeg',
-    category: 'brownies-sencillos',
-    basePrice: 160,
-    flavors: ['Chocolate blanco'],
-    flavorPriceDelta: {}
-  },
-  {
-    id: 'p23',
-    name: 'Caja de 10 Brownies Sencillos (Chocolate Blanco)',
-    description: 'Brownies de chocolate blanco con glaseado de nutella.',
-    image: '/caja10browies.jpeg',
-    category: 'brownies-sencillos',
-    basePrice: 260,
-    flavors: ['Chocolate blanco'],
-    flavorPriceDelta: {}
-  },
-  {
     id: 'p24',
     name: 'Caja de 4 Brownies Gourmet (Chocolate)',
     description: 'Brownies de chocolate con glaseado de nutella o cajeta y toppings de: Mazapán, Ferreros, Carlos V, Chocolate bon o bon, Oreo, Fresas, Duraznos, Kiwi.',
@@ -169,39 +139,6 @@ const products = [
     category: 'brownies-gourmet',
     basePrice: 280,
     flavors: ['Chocolate'],
-    flavorPriceDelta: {},
-    badge: 'Gourmet'
-  },
-  {
-    id: 'p27',
-    name: 'Caja de 4 Brownies Gourmet (Chocolate Blanco)',
-    description: 'Brownies de chocolate blanco con glaseado de nutella o cajeta y toppings de: Mazapán, Ferreros, Carlos V, Chocolate bon o bon, Oreo, Fresas, Duraznos, Kiwi.',
-    image: '/charolabroeniesdecorados.jpeg',
-    category: 'brownies-gourmet',
-    basePrice: 140,
-    flavors: ['Chocolate blanco'],
-    flavorPriceDelta: {},
-    badge: 'Gourmet'
-  },
-  {
-    id: 'p28',
-    name: 'Caja de 6 Brownies Gourmet (Chocolate Blanco)',
-    description: 'Brownies de chocolate blanco con glaseado de nutella o cajeta y toppings de: Mazapán, Ferreros, Carlos V, Chocolate bon o bon, Oreo, Fresas, Duraznos, Kiwi.',
-    image: '/gour6pz.jpeg',
-    category: 'brownies-gourmet',
-    basePrice: 200,
-    flavors: ['Chocolate blanco'],
-    flavorPriceDelta: {},
-    badge: 'Gourmet'
-  },
-  {
-    id: 'p29',
-    name: 'Caja de 10 Brownies Gourmet (Chocolate Blanco)',
-    description: 'Brownies de chocolate blanco con glaseado de nutella o cajeta y toppings de: Mazapán, Ferreros, Carlos V, Chocolate bon o bon, Oreo, Fresas, Duraznos, Kiwi.',
-    image: '/gourmet10.jpeg',
-    category: 'brownies-gourmet',
-    basePrice: 320,
-    flavors: ['Chocolate blanco'],
     flavorPriceDelta: {},
     badge: 'Gourmet'
   },
